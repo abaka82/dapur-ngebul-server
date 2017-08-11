@@ -209,15 +209,6 @@ Below are the instructions for setting up the server on your local machine.  The
 > You may need to "Allow Less Secure Apps" in your gmail account (it's all the way at the bottom). You also may need to "Allow access to your Google account"
 
 
-### Locally (the easiest - using Docker)
-----------------------------------------------------------
-* To build, ```docker-compose build```
-
-* Then run it, ```docker-compose up```
-
-* Even better, build and run on single run, ```docker-compose up --build```
-
-
 
 ### Locally (one time only setup)
 ----------------------------------------------------------
