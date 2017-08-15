@@ -119,7 +119,7 @@ internals.init = function (server) {
    */
   const swaggerOptions = {
     info: {
-      'title': 'Snowflake - API Documentation',
+      'title': 'Dapur Ngebul - API Documentation',
       'version': Pack.version
     }
   };
