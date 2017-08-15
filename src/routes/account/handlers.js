@@ -24,8 +24,6 @@ var Boom = require('boom'),
     Mailer = require('../../lib/Mailer'),
     // time/date functions
     Moment = require('moment'),
-    // the client for redis
-    redisClient = require('../../database/redis'),
     // helper library
     _ = require('underscore'),
     // our user in mongodb
@@ -115,13 +113,9 @@ internals.loginUser = function (req, reply) {
 /**
  * ## logoutUser
  *
- * Create a token blacklist with Redis
- * see: https://auth0.com/blog/2015/03/10/blacklist-json-web-token-api-keys/
- *
  */
 internals.logoutUser = function(req, reply) {
   var headers = req.headers.authorization.split(' ');
-  redisClient.set(headers[1], new Date());
   reply({});
 };
 /**
